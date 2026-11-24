@@ -15,7 +15,7 @@
 ---
 ![Yearly Contributions](https://gitshine.com/card/ProGencel?layout=years&theme=dark)
 ---
-![WakaTime Extended](https://github-stats-extended.vercel.app/api/wakatime?username=ProGencel&theme=tokyonight)
+![WakaTime Extended](https://github-stats-extended.vercel.app/api/wakatime?username=0374d8b4-edef-4846-8510-4997a347e3e5&theme=tokyonight)
 
 ## 📊 GitHub Metrics
 
