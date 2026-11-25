@@ -1,0 +1,64 @@
+
+    
+  
+name: Pixel Studio widgets
+
+on:
+  workflow_dispatch:
+    inputs:
+      refresh_static:
+        description: Redraw existing social buttons and technology cards
+        type: boolean
+        default: false
+  schedule:
+    - cron: "37 3 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pixel-widgets-${{ github.event.repository.default_branch }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - name: Generate and publish changed widgets
+        env:
+          BRANCH: ${{ github.event.repository.default_branch }}
+          PIXEL_TOKEN: ${{ secrets.PIXEL_READ_TOKEN || (vars.PIXEL_USE_METRICS_TOKEN != 'true' && github.token) || secrets.METRICS_TOKEN }}
+          REFRESH_STATIC: ${{ inputs.refresh_static && 'true' || 'false' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          args=()
+          if [[ "$REFRESH_STATIC" == true ]]; then args+=(--refresh-static); fi
+          for attempt in 1 2 3; do
+            git fetch --no-tags origin "refs/heads/$BRANCH"
+            git checkout --quiet --detach FETCH_HEAD
+            base=$(git rev-parse HEAD)
+            python3 scripts/pixel_widgets.py --self-test
+            python3 scripts/pixel_widgets.py "${args[@]}"
+            git add -- 'assets/pixel-widgets/*.svg'
+            if git diff --cached --quiet; then
+              echo 'All widgets are current.'
+              exit 0
+            fi
+            git commit -m 'Update Pixel Studio widgets'
+            if git push origin "HEAD:refs/heads/$BRANCH"; then exit 0; fi
+            git fetch --no-tags origin "refs/heads/$BRANCH"
+            if [[ "$(git rev-parse FETCH_HEAD)" == "$base" ]]; then
+              echo 'Push rejected. Check branch rules and Actions write access.' >&2
+              exit 1
+            fi
+            echo "Branch advanced during attempt $attempt. Rebuilding on the new head."
+          done
+          echo 'Branch kept moving. Run the workflow again.' >&2
+          exit 1
+
