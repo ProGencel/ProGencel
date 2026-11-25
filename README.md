@@ -1,29 +1,30 @@
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/pixel-room?username=progencel&mode=light&v=2026-11-25" />
   <img src="https://www.gitskins.com/api/section/pixel-room?username=progencel&mode=dark&v=2026-11-11" width="100%" alt="Ahmet Efe Gencel's pixel studio" />
-</picture>
-
-<sub>The window shows the weather in İstanbul-Bursa right now. The monitor scrolls my latest commits; the shelf holds a book for each language I write.</sub>
-
+</picture><sub>The window shows the weather in İstanbul-Bursa right now. The monitor scrolls my latest commits; the shelf holds a book for each language I write.</sub>
 <br><br>
 
-<a href="https://github.com/progencel">GitHub</a> ·
-<a href="https://progencel.github.io/">Website</a> ·
-<a href="https://progencel.itch.io/">Itch.io</a>
 
-<br><br>
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/studio-about?username=progencel&mode=light&v=2026-11-11" />
-  <img src="https://www.gitskins.com/api/section/studio-about?username=progencel&mode=dark&v=2026-11-11" width="100%" alt="About Ahmet Efe Gençel" />
-</picture>
+<a href="https://github.com/ProGencel"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ProGencel/ProGencel/main/assets/pixel-widgets/github-light.svg" /><img src="https://raw.githubusercontent.com/ProGencel/ProGencel/main/assets/pixel-widgets/github-dark.svg" width="156" alt="GitHub" /></picture></a>
+<a href="https://progencel.github.io/"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ProGencel/ProGencel/main/assets/pixel-widgets/portfolio-light.svg" /><img src="https://raw.githubusercontent.com/ProGencel/ProGencel/main/assets/pixel-widgets/portfolio-dark.svg" width="156" alt="Portfolio" /></picture></a>
+<a href="https://progencel.itch.io/"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ProGencel/ProGencel/main/assets/pixel-widgets/itch-light.svg" /><img src="https://raw.githubusercontent.com/ProGencel/ProGencel/main/assets/pixel-widgets/itch-dark.svg" width="156" alt="Itch.io" /></picture></a>
 
-<br>
+
+
+<picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ProGencel/ProGencel/main/assets/pixel-widgets/about-light.svg" /><img src="https://raw.githubusercontent.com/ProGencel/ProGencel/main/assets/pixel-widgets/about-dark.svg" width="100%" alt="About Ahmet Efe Gençel" /></picture>
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/pixel-hud?username=progencel&mode=light&v=2026-11-11" />
   <img src="https://www.gitskins.com/api/section/pixel-hud?username=progencel&mode=dark&v=2026-11-11" width="100%" alt="Commits, pull requests, stars and best streak" />
 </picture>
+
+
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/pixel-header?username=progencel&title=%3E+Tech+Stack&mode=light&v=2026-11-11" />
+  <img src="https://www.gitskins.com/api/section/pixel-header?username=progencel&title=%3E+Tech+Stack&mode=dark&v=2026-11-11" width="100%" alt="Tech Stack" />
+</picture><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ProGencel/ProGencel/main/assets/pixel-widgets/libgdx-light.svg" /><img src="https://raw.githubusercontent.com/ProGencel/ProGencel/main/assets/pixel-widgets/libgdx-dark.svg" width="216" alt="LibGDX" /></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ProGencel/ProGencel/main/assets/pixel-widgets/spring-light.svg" /><img src="https://raw.githubusercontent.com/ProGencel/ProGencel/main/assets/pixel-widgets/spring-dark.svg" width="216" alt="Spring Boot" /></picture>
 
 <br><br>
 
@@ -32,47 +33,28 @@
   <img src="https://www.gitskins.com/api/section/pixel-header?username=progencel&title=%3E+Coding+Activity&mode=dark&v=2026-11-11" width="100%" alt="Coding Activity" />
 </picture>
 
-<br>
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api/wakatime?username=0374d8b4-edef-4846-8510-4997a347e3e5&theme=default&hide_border=true" />
+  <img src="https://github-stats-extended.vercel.app/api/wakatime?username=0374d8b4-edef-4846-8510-4997a347e3e5&bg_color=151b23&title_color=3fb950&text_color=f0f6fc&border_color=262c36&custom_title=Coding%20Time" width="100%" alt="WakaTime Statistics" />
+</picture>
 
-![WakaTime Extended](https://github-stats-extended.vercel.app/api/wakatime?username=0374d8b4-edef-4846-8510-4997a347e3e5&theme=tokyonight)
-
-<br><br>
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/pixel-header?username=progencel&title=%3E+Projects&mode=light&v=2026-11-11" />
   <img src="https://www.gitskins.com/api/section/pixel-header?username=progencel&title=%3E+Projects&mode=dark&v=2026-11-11" width="100%" alt="Projects" />
-</picture>
-
-<a href="https://github.com/ProGencel/Goblin-Quest"><picture><source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/pixel-card?username=progencel&i=0&r=Goblin-Quest&mode=light&v=2026-11-11" /><img src="https://www.gitskins.com/api/section/pixel-card?username=progencel&i=0&r=Goblin-Quest&mode=dark&v=2026-11-11" width="49%" alt="Goblin-Quest" /></picture></a>
+</picture><a href="https://github.com/ProGencel/Goblin-Quest"><picture><source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/pixel-card?username=progencel&i=0&r=Goblin-Quest&mode=light&v=2026-11-11" /><img src="https://www.gitskins.com/api/section/pixel-card?username=progencel&i=0&r=Goblin-Quest&mode=dark&v=2026-11-11" width="49%" alt="Goblin-Quest" /></picture></a>
 <a href="https://github.com/ProGencel/ProGencel.github.io"><picture><source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/pixel-card?username=progencel&i=1&r=ProGencel.github.io&mode=light&v=2026-11-11" /><img src="https://www.gitskins.com/api/section/pixel-card?username=progencel&i=1&r=ProGencel.github.io&mode=dark&v=2026-11-11" width="49%" alt="ProGencel.github.io" /></picture></a>
 <a href="https://github.com/ProGencel/FlappyDog"><picture><source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/pixel-card?username=progencel&i=2&r=FlappyDog&mode=light&v=2026-11-11" /><img src="https://www.gitskins.com/api/section/pixel-card?username=progencel&i=2&r=FlappyDog&mode=dark&v=2026-11-11" width="49%" alt="FlappyDog" /></picture></a>
 <a href="https://github.com/ProGencel/Rectangle-Machine"><picture><source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/pixel-card?username=progencel&i=3&r=Rectangle-Machine&mode=light&v=2026-11-11" /><img src="https://www.gitskins.com/api/section/pixel-card?username=progencel&i=3&r=Rectangle-Machine&mode=dark&v=2026-11-11" width="49%" alt="Rectangle-Machine" /></picture></a>
 
-<br><br>
+
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/pixel-header?username=progencel&title=%3E+Activity&mode=light&v=2026-11-11" />
   <img src="https://www.gitskins.com/api/section/pixel-header?username=progencel&title=%3E+Activity&mode=dark&v=2026-11-11" width="100%" alt="Activity" />
 </picture>
+<a href="https://github.com/ProGencel?tab=overview#js-contribution-activity"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ProGencel/ProGencel/main/assets/pixel-widgets/activity-light.svg" /><img src="https://raw.githubusercontent.com/ProGencel/ProGencel/main/assets/pixel-widgets/activity-dark.svg" width="100%" alt="Contributions in the last 12 months, current and longest streaks, and active days" /></picture></a>
 
-<br>
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/studio-log?username=progencel&mode=light&v=2026-11-11" />
-  <img src="https://www.gitskins.com/api/section/studio-log?username=progencel&mode=dark&v=2026-11-11" width="100%" alt="The last 26 weeks of contributions, the streak and the year" />
-</picture>
-
-<br><br>
-
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/pixel-header?username=progencel&title=%3E+GitHub+Metrics&mode=light&v=2026-11-11" />
-  <img src="https://www.gitskins.com/api/section/pixel-header?username=progencel&title=%3E+GitHub+Metrics&mode=dark&v=2026-11-11" width="100%" alt="GitHub Metrics" />
-</picture>
-
-<br>
-
-![Metrics](./metrics-general.svg)
-
-<br><br>
 
 <sub>Pixel Studio · customized by ProGencel · base template made with <a href="https://www.gitskins.com/readme-generator">GitSkins</a></sub>
