@@ -34,10 +34,20 @@
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api/wakatime?username=0374d8b4-edef-4846-8510-4997a347e3e5&theme=default&hide_border=true" />
-  <img src="https://github-stats-extended.vercel.app/api/wakatime?username=0374d8b4-edef-4846-8510-4997a347e3e5&bg_color=151b23&title_color=3fb950&text_color=f0f6fc&border_color=262c36&custom_title=Coding%20Time" width="100%" alt="WakaTime Statistics" />
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://github-stats-extended.vercel.app/api/wakatime?username=0374d8b4-edef-4846-8510-4997a347e3e5&range=last_7_days&theme=default&hide_border=true&custom_title=Weekly%20Coding%20Time&v=261127" />
+  <img
+    src="https://github-stats-extended.vercel.app/api/wakatime?username=0374d8b4-edef-4846-8510-4997a347e3e5&range=last_7_days&bg_color=151b23&title_color=3fb950&text_color=f0f6fc&border_color=262c36&custom_title=Weekly%20Coding%20Time&v=261127"
+    width="100%" alt="Weekly Coding Time" />
 </picture>
 
+<picture>
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://github-stats-extended.vercel.app/api/wakatime?username=0374d8b4-edef-4846-8510-4997a347e3e5&range=all_time&theme=default&hide_border=true&custom_title=All%20Time%20Coding&v=261127" />
+  <img
+    src="https://github-stats-extended.vercel.app/api/wakatime?username=0374d8b4-edef-4846-8510-4997a347e3e5&range=all_time&bg_color=151b23&title_color=3fb950&text_color=f0f6fc&border_color=262c36&custom_title=All%20Time%20Coding&v=261127"
+    width="100%" alt="All Time Coding" />
+</picture>
 
 
 <picture>
