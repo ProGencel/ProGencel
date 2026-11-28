@@ -1,0 +1,97 @@
+name: Update WakaTime Cards
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wakatime-cards
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download WakaTime cards
+        shell: bash
+        run: |
+          BASE="https://github-stats-extended.vercel.app/api/wakatime"
+          USER="0374d8b4-edef-4846-8510-4997a347e3e5"
+          VERSION=$(date +%s)
+          DIR="$RUNNER_TEMP/wakatime"
+
+          mkdir -p "$DIR"
+
+          for RANGE in last_7_days all_time; do
+            if [ "$RANGE" = "last_7_days" ]; then
+              NAME="weekly"
+              TITLE="Weekly%20Coding%20Time"
+            else
+              NAME="all-time"
+              TITLE="All%20Time%20Coding"
+            fi
+
+            URL="$BASE?username=$USER&range=$RANGE&custom_title=$TITLE&v=$VERSION"
+
+            curl -fsSL --retry 3 --max-time 60 \
+              "$URL&theme=default&hide_border=true" \
+              -o "$DIR/$NAME-light.svg"
+
+            curl -fsSL --retry 3 --max-time 60 \
+              "$URL&bg_color=151b23&title_color=3fb950&text_color=f0f6fc&border_color=262c36" \
+              -o "$DIR/$NAME-dark.svg"
+          done
+
+          python - <<'PY'
+          import os
+          import pathlib
+          import xml.etree.ElementTree as ET
+
+          directory = pathlib.Path(os.environ["RUNNER_TEMP"]) / "wakatime"
+
+          for file in directory.glob("*.svg"):
+              root = ET.parse(file).getroot()
+              title = (
+                  "Weekly Coding Time"
+                  if file.name.startswith("weekly")
+                  else "All Time Coding"
+              )
+
+              assert root.tag.endswith("}svg"), file.name
+              assert title in "".join(root.itertext()), file.name
+              print("Validated:", file.name)
+          PY
+
+      - name: Publish cards
+        shell: bash
+        run: |
+          BRANCH="wakatime-output"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ -n "$(git ls-remote --heads origin "$BRANCH")" ]; then
+            git fetch origin "$BRANCH"
+            git switch -c "$BRANCH" FETCH_HEAD
+          else
+            git switch --orphan "$BRANCH"
+          fi
+
+          cp "$RUNNER_TEMP"/wakatime/*.svg .
+
+          git add *.svg
+
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Update WakaTime cards"
+            git push origin HEAD:"$BRANCH"
+          fi
