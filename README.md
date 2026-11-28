@@ -35,17 +35,17 @@
 
 <picture>
   <source media="(prefers-color-scheme: light)"
-    srcset="https://github-stats-extended.vercel.app/api/wakatime?username=0374d8b4-edef-4846-8510-4997a347e3e5&range=last_7_days&theme=default&hide_border=true&custom_title=Weekly%20Coding%20Time&v=261127" />
+    srcset="https://raw.githubusercontent.com/ProGencel/ProGencel/wakatime-output/weekly-light.svg" />
   <img
-    src="https://github-stats-extended.vercel.app/api/wakatime?username=0374d8b4-edef-4846-8510-4997a347e3e5&range=last_7_days&bg_color=151b23&title_color=3fb950&text_color=f0f6fc&border_color=262c36&custom_title=Weekly%20Coding%20Time&v=261127"
+    src="https://raw.githubusercontent.com/ProGencel/ProGencel/wakatime-output/weekly-dark.svg"
     width="100%" alt="Weekly Coding Time" />
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: light)"
-    srcset="https://github-stats-extended.vercel.app/api/wakatime?username=0374d8b4-edef-4846-8510-4997a347e3e5&range=all_time&theme=default&hide_border=true&custom_title=All%20Time%20Coding&v=261127" />
+    srcset="https://raw.githubusercontent.com/ProGencel/ProGencel/wakatime-output/all-time-light.svg" />
   <img
-    src="https://github-stats-extended.vercel.app/api/wakatime?username=0374d8b4-edef-4846-8510-4997a347e3e5&range=all_time&bg_color=151b23&title_color=3fb950&text_color=f0f6fc&border_color=262c36&custom_title=All%20Time%20Coding&v=261127"
+    src="https://raw.githubusercontent.com/ProGencel/ProGencel/wakatime-output/all-time-dark.svg"
     width="100%" alt="All Time Coding" />
 </picture>
 
